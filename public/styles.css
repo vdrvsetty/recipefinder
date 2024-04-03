@@ -1,0 +1,116 @@
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  .card{
+
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(86, 82, 82, 0.511);
+    margin: 10px;
+    background-color: grey;
+  }
+
+  .card-body{
+
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(222, 246, 248, 0.511);
+    margin: 10px;
+    background-color: rgb(195, 245, 247);
+  }
+
+  .recipeCardsContainer{
+    background-color: hsl(142, 59%, 69%);
+    height: auto;
+  }
+  .description-scrollable {
+    max-height: 100px; /* Adjust based on your preference */
+    overflow-y: auto;
+  }
+  .description-scrollable::-webkit-scrollbar {
+    width: 8px; /* Adjust scrollbar width */
+}
+
+.description-scrollable::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Track background color */
+}
+
+.description-scrollable::-webkit-scrollbar-thumb {
+    background: #036d58; /* Thumb color */
+    width: 4px; /* Adjust scrollbar width */
+    height: 4px; /* Adjust scrollbar height */
+    border-radius: 50%;
+}
+
+.description-scrollable::-webkit-scrollbar-thumb:hover {
+    background: #00cff8; /* Thumb color when hovered */
+}
+  

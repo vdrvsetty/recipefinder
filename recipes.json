@@ -1,0 +1,160 @@
+[
+  {
+    "id": 1,
+    "title": "Spaghetti Carbonara",
+    "description": "A quick, easy pasta dish with bacon, eggs, and cheese.",
+    "ingredients": ["Pasta", "Bacon", "Eggs", "Parmesan Cheese", "Garlic"],
+    "thumbnail": "carbonara.jpg",
+    "steps": ["Boil pasta", "Fry bacon", "Whisk eggs and cheese", "Combine all"]
+  },
+  {
+    "id": 2,
+    "title": "Chicken Alfredo Pasta",
+    "description": "A creamy, comforting dish with tender chicken and a rich garlic Parmesan sauce.",
+    "ingredients": ["Pasta", "Parmesan Cheese", "Garlic", "Chicken", "Cream"],
+    "thumbnail": "chicken_alfredo.jpg",
+    "steps": ["Cook pasta", "Prepare sauce", "Cook chicken", "Combine all"]
+  },
+  {
+    "id": 3,
+    "title": "Classic Caesar Salad",
+    "description": "A fresh, crunchy salad with homemade Caesar dressing.",
+    "ingredients": ["Garlic", "Parmesan Cheese", "Olive Oil", "Eggs", "Lettuce"],
+    "thumbnail": "caesar_salad.jpg",
+    "steps": ["Prepare dressing", "Toss lettuce", "Add toppings"]
+  },
+  {
+    "id": 4,
+    "title": "Garlic Bread",
+    "description": "Crunchy, buttery garlic bread, perfect as a side dish.",
+    "ingredients": ["Garlic", "Olive Oil", "Parmesan Cheese", "Butter", "Bread"],
+    "thumbnail": "garlic_bread.jpg",
+    "steps": ["Prepare garlic butter", "Spread on bread", "Bake"]
+  },
+  {
+    "id": 5,
+    "title": "Baked Garlic Parmesan Chicken",
+    "description": "Juicy chicken breasts with a delicious garlic Parmesan crust.",
+    "ingredients": ["Chicken", "Garlic", "Parmesan Cheese", "Olive Oil", "Breadcrumbs"],
+    "thumbnail": "baked_chicken.jpg",
+    "steps": ["Prep chicken", "Mix coating", "Bake"]
+  },
+  {
+    "id": 6,
+    "title": "Tomato Basil Pasta",
+    "description": "A light and fresh tomato basil pasta perfect for any occasion.",
+    "ingredients": ["Pasta", "Tomatoes", "Basil", "Garlic", "Olive Oil"],
+    "thumbnail": "tomato_basil_pasta.jpg",
+    "steps": ["Cook pasta", "Sauté tomatoes and garlic", "Toss with basil and olive oil", "Serve with grated Parmesan"]
+  },
+  {
+    "id": 7,
+    "title": "Lemon Garlic Roasted Chicken",
+    "description": "Juicy chicken roasted with a lemon garlic infusion.",
+    "ingredients": ["Chicken", "Lemon", "Garlic", "Butter", "Rosemary"],
+    "thumbnail": "lemon_garlic_chicken.jpg",
+    "steps": ["Prep chicken", "Season and add lemon garlic butter", "Roast", "Serve with juices"]
+  },
+  {
+    "id": 8,
+    "title": "Creamy Tomato Soup",
+    "description": "A rich and creamy tomato soup with a hint of basil.",
+    "ingredients": ["Tomatoes", "Cream", "Basil", "Garlic", "Onion"],
+    "thumbnail": "creamy_tomato_soup.jpg",
+    "steps": ["Sauté garlic and onion", "Add tomatoes and simmer", "Blend until smooth", "Stir in cream and basil"]
+  },
+  {
+    "id": 9,
+    "title": "Parmesan Roasted Broccoli",
+    "description": "Broccoli florets roasted with Parmesan cheese and garlic.",
+    "ingredients": ["Broccoli", "Parmesan Cheese", "Garlic", "Olive Oil", "Lemon"],
+    "thumbnail": "parmesan_roasted_broccoli.jpg",
+    "steps": ["Toss broccoli with garlic and olive oil", "Roast", "Sprinkle with Parmesan and lemon zest", "Serve"]
+  },
+  {
+    "id": 10,
+    "title": "Basil Pesto Pasta",
+    "description": "Pasta tossed in a homemade basil pesto sauce.",
+    "ingredients": ["Pasta", "Basil", "Parmesan Cheese", "Garlic", "Pine Nuts"],
+    "thumbnail": "basil_pesto_pasta.jpg",
+    "steps": ["Prepare pesto sauce", "Cook pasta", "Toss pasta with pesto", "Serve with extra Parmesan"]
+  },
+  {
+    "id": 11,
+    "title": "Mushroom Risotto",
+    "description": "Earthy mushrooms paired with creamy Arborio rice for a classic Italian dish.",
+    "ingredients": ["Arborio Rice", "Mushrooms", "Garlic", "Parmesan Cheese", "Chicken Stock"],
+    "thumbnail": "mushroom_risotto.jpg",
+    "steps": ["Sauté mushrooms and garlic", "Add rice", "Gradually add stock", "Stir in Parmesan"]
+  },
+  {
+    "id": 12,
+    "title": "Roasted Vegetable Quinoa",
+    "description": "A healthy mix of roasted veggies over fluffy quinoa, dressed with olive oil and lemon.",
+    "ingredients": ["Quinoa", "Zucchini", "Bell Peppers", "Garlic", "Olive Oil"],
+    "thumbnail": "roasted_vegetable_quinoa.jpg",
+    "steps": ["Roast vegetables", "Cook quinoa", "Combine with dressing"]
+  },
+  {
+    "id": 13,
+    "title": "Beef Bolognese",
+    "description": "A rich and hearty tomato-based sauce with ground beef, served over pasta.",
+    "ingredients": ["Ground Beef", "Tomatoes", "Garlic", "Onion", "Olive Oil"],
+    "thumbnail": "beef_bolognese.jpg",
+    "steps": ["Cook beef", "Sauté onion and garlic", "Add tomatoes", "Simmer", "Serve over pasta"]
+  },
+  {
+    "id": 14,
+    "title": "Chicken Piccata",
+    "description": "Lightly breaded chicken breasts in a zesty lemon and caper sauce.",
+    "ingredients": ["Chicken Breasts", "Lemon", "Capers", "Garlic", "Butter"],
+    "thumbnail": "chicken_piccata.jpg",
+    "steps": ["Bread chicken", "Sauté", "Make sauce", "Combine"]
+  },
+  {
+    "id": 15,
+    "title": "Quiche Lorraine",
+    "description": "A savory pie filled with bacon, cheese, and a smooth egg custard.",
+    "ingredients": ["Eggs", "Bacon", "Cheese", "Cream", "Pie Crust"],
+    "thumbnail": "quiche_lorraine.jpg",
+    "steps": ["Prepare crust", "Cook bacon", "Mix eggs and cream", "Bake"]
+  },
+  {
+    "id": 16,
+    "title": "Shrimp Scampi",
+    "description": "Succulent shrimp sautéed with garlic, lemon, and parsley, served over linguine.",
+    "ingredients": ["Shrimp", "Garlic", "Lemon", "Parsley", "Butter"],
+    "thumbnail": "shrimp_scampi.jpg",
+    "steps": ["Sauté shrimp", "Add garlic and lemon", "Serve over linguine"]
+  },
+  {
+    "id": 17,
+    "title": "Vegetarian Chili",
+    "description": "A hearty and spicy chili made with beans, tomatoes, and a variety of vegetables.",
+    "ingredients": ["Beans", "Tomatoes", "Onion", "Garlic", "Chili Powder"],
+    "thumbnail": "vegetarian_chili.jpg",
+    "steps": ["Cook vegetables", "Add beans and tomatoes", "Season", "Simmer"]
+  },
+  {
+    "id": 18,
+    "title": "Fish Tacos",
+    "description": "Grilled or battered fish in soft tortillas with cabbage slaw and a creamy sauce.",
+    "ingredients": ["Fish", "Cabbage", "Tortillas", "Lime", "Sour Cream"],
+    "thumbnail": "fish_tacos.jpg",
+    "steps": ["Prepare fish", "Make slaw", "Assemble tacos"]
+  },
+  {
+    "id": 19,
+    "title": "Pulled Pork Sandwiches",
+    "description": "Slow-cooked pork shoulder, shredded and served with barbecue sauce on buns.",
+    "ingredients": ["Pork Shoulder", "BBQ Sauce", "Onion", "Garlic", "Buns"],
+    "thumbnail": "pulled_pork_sandwiches.jpg",
+    "steps": ["Slow cook pork", "Shred", "Serve on buns with sauce"]
+  },
+  {
+    "id": 20,
+    "title": "Apple Pie",
+    "description": "Classic dessert with a flaky crust and sweet, cinnamon-spiced apple filling.",
+    "ingredients": ["Apples", "Sugar", "Cinnamon", "Butter", "Pie Crust"], 
+    "thumbnail": "apple_pie.jpg", 
+    "steps": ["Prepare the crust", "Mix apples with sugar and cinnamon", "Fill crust and top with butter", "Bake until golden"]} ]
