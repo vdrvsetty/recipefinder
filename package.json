@@ -13,6 +13,7 @@
   "dependencies": {
     "bootstrap": "^5.3.3",
     "express": "^4.18.3",
+    "node-fetch": "^2.7.0",
     "spoonacular_api": "^1.0.0"
   }
 }

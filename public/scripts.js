@@ -1,47 +1,52 @@
-document.getElementById('searchBtn').addEventListener('click', () => {
-  const ingredient = document.getElementById('ingredientInput').value;
-  fetch(`/api/recipes?ingredient=${ingredient}`)
-    .then(response => response.json())
-    .then(recipes => {
-      console.log("recipes - recd from server", recipes);
-      window.currentRecipes = recipes; // Make it globally accessible
-      const container = document.getElementById('recipeCardsContainer');
-      container.innerHTML = ''; // Clear previous results
-      recipes.forEach(recipe => {
-        const card = `<div class="card recipe-card" style="width: 18rem;">
-                        <img src="./${recipe.thumbnail}" class="card-img-top" alt="${recipe.title}">
-                        <div class="card-body">
-                          <h5 class="card-title">${recipe.title}</h5>
-                          <p class="card-text description-scrollable">${recipe.description}</p>
-                          <button class="btn btn-primary" data-recipe-id="${recipe.id}" onclick="showRecipe('${recipe.id}')">View Recipe</button>
-                        </div>
-                      </div>`;
-        container.innerHTML += card;
-      });
-    });
-});
+document.addEventListener('DOMContentLoaded', function() {
+    let recipesData = {}; // Store recipes data by ID
 
-function showRecipe(recipeId) {
-  const recipe = window.currentRecipes.find(r => r.id === recipeId); // Use globally accessible recipes
-  if (recipe) {
-    const modalRecipeDetail = document.getElementById('modalRecipeDetail');
-    modalRecipeDetail.innerHTML = `
-      <div class="card">
-        <img src="${recipe.thumbnail}" class="card-img-top" alt="${recipe.title}">
-        <div class="card-body">
-          <h5 class="card-title">${recipe.title}</h5>
-          <p class="card-text">${recipe.description}</p>
-          <p class="card-text"><strong>Steps:</strong> ${recipe.steps}</p>
-        </div>
-      </div>
-    `;
-    
-    // Trigger the modal using Bootstrap's JavaScript API
-    const recipeModal = new bootstrap.Modal(document.getElementById('recipeModal'), {
-      keyboard: true
+    document.getElementById('searchBtn').addEventListener('click', () => {
+        const ingredient = document.getElementById('ingredientInput').value;
+        fetch(`/api/searchRecipes?ingredient=${ingredient}`)
+            .then(response => response.json())
+            .then(recipes => {
+                const container = document.getElementById('recipeCardsContainer');
+                container.innerHTML = ''; // Clear previous results
+                recipes.forEach(recipe => {
+                    recipesData[recipe.id] = recipe; // Store recipe data by ID
+                    const card = `<div class="card recipe-card" style="width: 18rem;">
+                                      <img src="${recipe.thumbnail}" class="card-img-top" alt="${recipe.title}">
+                                      <div class="card-body">
+                                          <h5 class="card-title">${recipe.title}</h5>
+                                          <p class="card-text">${recipe.description}</p>
+                                          <button class="btn btn-primary" data-recipe-id="${recipe.id}">View Recipe</button>
+                                      </div>
+                                    </div>`;
+                    container.innerHTML += card;
+                });
+
+                // Add click event listeners to the newly added buttons
+                document.querySelectorAll('.btn-primary').forEach(button => {
+                    button.addEventListener('click', function() {
+                        const recipeId = this.getAttribute('data-recipe-id');
+                        showRecipe(recipesData[recipeId]);
+                    });
+                });
+            }).catch(error => console.error('Error fetching recipes:', error));
     });
-    recipeModal.show();
-  } else {
-    console.error('Recipe not found');
-  }
-}
+
+    window.showRecipe = function(recipe) {
+        const detailContainer = document.getElementById('recipeDetailContainer');
+        detailContainer.innerHTML = ''; // Clear previous details
+        let stepsHtml = recipe.steps.map(step => `<li>${step.step}</li>`).join('');
+        const recipeDetailHtml = `
+            <div class="card">
+                <img src="${recipe.thumbnail}" class="card-img-top" alt="${recipe.title}">
+                <div class="card-body">
+                    <h5 class="card-title">${recipe.title}</h5>
+                    <p class="card-text">${recipe.description}</p>
+                    <ol class="card-text"><strong>Steps:</strong>${stepsHtml}</ol>
+                </div>
+            </div>
+        `;
+        detailContainer.innerHTML = recipeDetailHtml;
+        // Trigger the modal to show
+        new bootstrap.Modal(document.getElementById('recipeDetailModal')).show();
+    };
+});
