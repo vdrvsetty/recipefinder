@@ -110,6 +110,8 @@
     border-radius: 50%;
 }
 
+
+
 .description-scrollable::-webkit-scrollbar-thumb:hover {
     background: #00cff8; /* Thumb color when hovered */
 }

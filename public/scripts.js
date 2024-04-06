@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
               });
           }).catch(error => console.error('Error fetching recipes:', error));
   });
-
+console.log("new log");
   window.showRecipe = function(recipe) {
       const detailContainer = document.getElementById('recipeDetailContainer');
       detailContainer.innerHTML = ''; // Clear previous details
