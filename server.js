@@ -6,7 +6,7 @@ const PORT = 3500;
 app.use(express.static('public'));
 app.use(express.json());
 
-const SPOONACULAR_API_KEY = 'your_api_key_here'; // Make sure to replace with your actual API key
+const SPOONACULAR_API_KEY = '5a89a589c4bb48748ff298628cd75fb8'; // Make sure to replace with your actual API key
 
 // Function to fetch analyzed instructions for a single recipe
 async function fetchAnalyzedInstructions(id) {

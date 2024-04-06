@@ -114,3 +114,35 @@
     background: #00cff8; /* Thumb color when hovered */
 }
   
+.limited-text {
+  width: 250px; /* Adjust width as needed */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+#modal-content
+#recipeDetailContainer{
+  width: 60%;
+}
+.recipe-column {
+  position: relative;
+  flex: 0 0 auto;
+  width: 250%;
+  padding: 0 15px;
+  box-sizing: border-box;
+  left: -64px;
+}
+
+@media (max-width: 768px) {
+  .recipe-column {
+      width: 50%; /* Adjusts to 2 cards per row on smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .recipe-column {
+      width: 100%; /* 1 card per row on very small screens */
+  }
+}
