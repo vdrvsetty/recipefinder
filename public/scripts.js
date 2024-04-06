@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const recipeDetailHtml = `
           <div class="card">
               <img src="${recipe.thumbnail}" class="card-img-top" alt="${recipe.title}">
-              <div class="card-body">
+              <div class="card-body modal-card-body">
                   <h5 class="card-title">${recipe.title}</h5>
                   <p class="card-text">${recipe.description}</p>
                   <ol class="card-text"><strong>Steps:</strong>${stepsHtml}</ol>
